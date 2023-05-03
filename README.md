@@ -3,11 +3,11 @@ There are 55 landmarks on human ear which help identifying the person. This mode
 
 Original data belongs to [this source](https://ibug.doc.ic.ac.uk/resources/ibug-ears/) (check out Collection A). names are modified according to our convience as it is easier while writing the code. The data that is compatible with the model can be accessed from [this link](https://www.dropbox.com/sh/c8hizptl60lfogh/AADQN-kkuzkiP3ZcREQRxERsa?dl=0).
 
-input 
+# Input 
 
 ![input](https://github.com/harshavardhan183/Ear-Landmark-Detection-AND-Convex-Hull-Extraction/blob/main/ear-landmark-detection/images/imge_1.jpg)
 
-output
+# Output
 
 ![output](https://github.com/harshavardhan183/Ear-Landmark-Detection-AND-Convex-Hull-Extraction/blob/main/ear-landmark-detection/images/result_1.jpg)
 
