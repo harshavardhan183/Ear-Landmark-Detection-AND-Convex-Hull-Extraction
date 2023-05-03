@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/static/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        /* .ourteam p{
+            font-size: 20px;
+            color: white;
+        } */
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+         
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color:rgba(0, 0, 0, 0.2);
+          color: white;
+          height: 500px;
+          border-radius: 15px;
+          padding:9rem 9%;
+          
+        }
+        
+        .container {
+          padding: 0 16px;
+          font-size: 20px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        /* .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        } */
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+       
+          .social{
+              margin: auto auto;
+              justify-content: center;
+              align-items: center;
+          }
+          .fa {
+              justify-content: center;
+        padding: 20px;
+        font-size: 30px;
+        height: 70px;
+        width: 70px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        /* background: #3B5998; */
+        background: #666;
+        color: white;
+      }
+      
+      .fa-twitter {
+        /* background: #55ACEE; */
+        background: #666;
+        color: white;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        /* background: #007bb5; */
+        background: #666;
+        color: white;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+      
+      .fa-instagram {
+        /* background: #125688; */
+        background:#666;
+        color: white;
+      }
+      
+      .fa-pinterest {
+        background: #cb2027;
+        color: white;
+      }
+      
+      .fa-snapchat-ghost {
+        background: #fffc00;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+      
+      .fa-skype {
+        background: #00aff0;
+        color: white;
+      }
+      
+      .fa-android {
+        background: #a4c639;
+        color: white;
+      }
+      
+      .fa-dribbble {
+        background: #ea4c89;
+        color: white;
+      }
+      
+      .fa-vimeo {
+        background: #45bbff;
+        color: white;
+      }
+      
+      .fa-tumblr {
+        background: #2c4762;
+        color: white;
+      }
+      
+      .fa-vine {
+        background: #00b489;
+        color: white;
+      }
+      
+      .fa-foursquare {
+        background: #45bbff;
+        color: white;
+      }
+      
+      .fa-stumbleupon {
+        background: #eb4924;
+        color: white;
+      }
+      
+      .fa-flickr {
+        background: #f40083;
+        color: white;
+      }
+      
+      .fa-yahoo {
+        background: #430297;
+        color: white;
+      }
+      
+      .fa-soundcloud {
+        background: #ff5500;
+        color: white;
+      }
+      
+      .fa-reddit {
+        background: #ff5700;
+        color: white;
+      }
+      
+      .fa-rss {
+        background: #ff6600;
+        color: white;
+      }
+         </style>
+  
+       
+</head>
+<body>
+   
+
+    <header>
+	
+        <nav>
+            <div class="logo"> <h1 style="font-size: 20px;"> Ear detect </h1> </div>
+            <div class="menu">
+              <a href="{{url_for('home')}}" >Home</a>
+              <a href="{{url_for('about')}}">about</a>
+              <a href="{{url_for('contact')}}">contact</a>
+            </div>
+        </nav>
+</header>        
+    <div class="about-section">
+      <h1>Welcome to Ear detect</h1>
+      <p>ear detect is AI/ML Based website.this website is developed by vishal,gulshan,ganesh,harshavardhan,shashivardhan under the guidance of puneet gupta sir. 
+       ear detect gives an impetus to sophisticated ear landmark system. it helps people to get accurate results as expected.
+        the website is user friendly and every info is clearly mentioned. the user has the chance to contact the owners.
+      Our website hopes that you, the customers enjoy our features and help us to grow further. Please give feedback about your experience so that we can improve the website. Thank you for supporting us.<br>  <i>your feedback matters !!</i> </p>    
+    </div>
+    
+    <section class="heading">
+        <h1 class="heading">
+            <!-- <span>o</span>
+            <span>u</span>
+            <span>r</span> -->
+            <span>t</span>
+            <span>e</span>
+            <span>a</span>
+            <span>m</span>
+            <!-- <span>t</span>
+            <span>i</span>
+            <span>o</span>
+            <span>n</span>
+            <span>i</span> -->
+           
+        </h1>
+    </section>
+    <section class="mine">
+  
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="static/images/puneet.jfif" alt="Jane" height="400px" width="100%">
+          <div class="container">
+            <h2>Puneet Gupta</h2>
+            <p class="title">Professor</p>
+            <p>Computer Science and Engineering</p>
+            <p>IIT INDORE</p>
+           
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="static/images/vishal1.jpg" alt="Jane" height="400px" width="100%">
+          <div class="container">
+            <h2>Vishal Naik Dharavath</h2>
+            <p class="title">Student</p>
+            <p>Computer Science and Engineering</p>
+            <p>IIT INDORE</p>
+            <p>cse210001014@iiti.ac.in</p>
+            <p>contact: 6309933763</p>
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="static/images/gulshan.jpeg" alt="Jane" height="400px" width="100%">
+          <div class="container">
+            <h2>Gulshan Nag</h2>
+            <p class="title">Student</p>
+            <p>Computer Science and Engineering</p>
+            <p>IIT INDORE</p>
+            <p>cse210001021@iiti.ac.in</p>
+            <p>contact:8103620235</p>
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="static/images/vishal1.jpg" alt="Jane" height="400px" width="100%">
+          <div class="container">
+            <h2>Ganesh kumar reddy</h2>
+            <p class="title">Student</p>
+            <p>Computer Science and Engineering</p>
+            <p>IIT INDORE</p>
+            <p>cse210001014@iiti.ac.in</p>
+            <p>contact: 6309933763</p>
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="column">
+        <div class="card">
+          <img src="static/images/abhichand.jpeg" alt="Mike" height="400px" width="100%">
+          <div class="container">
+            <h2>harshavardhan</h2>
+            <p class="title">student</p>
+            <p>Computer Science and Engineering</p>
+            <p>IIT INDORE</p>
+            <p>cse210001039@iiti.ac.in</p>
+            <p>contact: 6309933763</p>
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="static/images/aruna.jpg" alt="John" height="400px" width="100%">
+          <div class="container">
+            <h2>shashivardhan </h2>
+            <p class="title">student</p>
+            <p>Computer Science Department</p>
+            <p>cse2100001013@iiti.ac.in</p>
+            <p>contact: </p>
+            <!-- <p>Head of counselling services</p> -->
+            <p>IIT INDORE</p>
+            <p>artiwari@iiti.ac.in</p>
+            <!-- <p><button class="button">Contact</button></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</section>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+  
+              <a href="#" class="logo">Ear detect</a>
+              <p class="footer-company-name"> <br> developed by: <br> Vishal naik Dharavath <br>ganesh kumar<br> harshavardhan <br> shashivardhan<br> gulshan <br><br><br>
+              </p>
+  
+      <!-- <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Blog</a>
+      
+        <a href="#">Pricing</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p> -->
+  
+      <p class="footer-company-name">Copyrights &copy; www.Eardetect.com. All rights reserved!</p>
+    </div>
+  
+    <div class="footer-center">
+  
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Indian Institute of Technology Indore</span> Simrol,Madhya Pradesh</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+916309933763 <br></p>
+                  
+      </div>
+  
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">cse210001014@iiti.ac.in <br></a></p>
+                 
+      </div>
+  
+    </div>
+  
+    <div class="footer-right">
+  
+      <p class="footer-company-about">
+        <span>About the company</span>
+      ear detect is an AI/ML based website which gives the landmarks for the ear when input is given.
+              </p>
+  
+      <div class="footer-icons">
+  
+        <a href="https://www.facebook.com/profile.php?id=100077840312584"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/AbhichandManch1"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/vishal-naik-dharavath-9b35a2236"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/mr_abc18/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+  
+      </div>
+  
+    </div>
+  
+  </footer>
+
+</body>
+</html>
